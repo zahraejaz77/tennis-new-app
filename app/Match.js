@@ -10,14 +10,13 @@ export default function Match() {
     <View flex-1 relative>
       <SafeAreaView
         style={{
-          paddingTop: Platform.OS === "android" ? 50 : 0,
+          paddingTop: Platform.OS === "android" ? 60 : 0,
           flex: 1,
         }}
         className="flex flex-1"
       >
-        <View className="  mx-4 relative z-40 ">
-          <View>
-            {/* track match topbar*/}
+        <View className="  relative z-40 justify-normal justify-items-center">
+          <View className="  flex-col relative  ">
             <TopMatchBar />
             <ScoreGrid />
             <MatchTrack />
